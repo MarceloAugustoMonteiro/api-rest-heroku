@@ -24,13 +24,13 @@ Exemplo em formato JSON:
 
 Método GET (consultar):
 
-https://api-rest-cliente-servico.herokuapp.com/api/clientes/"digite o ID do Cliente em que deseja consultar"
+https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "digite o ID do Cliente em que deseja consultar"
 
 Exemplo: https://api-rest-cliente-servico.herokuapp.com/api/clientes/1
 
 Método PUT (atualizar):
 
-https://api-rest-cliente-servico.herokuapp.com/api/clientes/"digite o ID do Cliente em que deseja atualizar"
+https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "digite o ID do Cliente em que deseja atualizar"
 
 Exemplo: https://api-rest-cliente-servico.herokuapp.com/api/clientes/2
 
@@ -49,7 +49,7 @@ Exemplo em formato JSON:
 
 Método DELETE (excluir):
 
-https://api-rest-cliente-servico.herokuapp.com/api/clientes/"digite o ID do Cliente em que deseja excluir"
+https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "digite o ID do Cliente em que deseja excluir"
 
 Exemplo: https://api-rest-cliente-servico.herokuapp.com/api/clientes/3
 
