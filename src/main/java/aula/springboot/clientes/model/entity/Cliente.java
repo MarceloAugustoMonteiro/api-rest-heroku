@@ -1,0 +1,44 @@
+package aula.springboot.clientes.model.entity;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.br.CPF;
+
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.util.List;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class Cliente {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @Column(nullable = false, length = 150)
+    private String nome;
+
+    @Column(nullable = false, length = 11)
+    @CPF
+    private String cpf;
+
+    @Column(name = "data_cadastro", updatable = false)
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate dataCadastro;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+    private List<Servico> servicos;
+
+    @PrePersist
+    public void prePersist(){
+        setDataCadastro(LocalDate.now());
+    }
+
+
+}
