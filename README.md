@@ -1,15 +1,15 @@
-# apiRestHeroku
-:boom: API REST com CRUD de Clientes e Serviços para teste com Heroku. :point_right:	
+# Rest API Heroku
+REST API with CRUD for Clients and Services for testing with Heroku.
 
-Testando no Postman:
+Testing in Postman:
 
-Link API na nuvem com Heroku: https://api-rest-cliente-servico.herokuapp.com
+Link API: https://api-rest-cliente-servico.herokuapp.com
 
-Método POST (adicionar):
+**POST Method (add):**
 
 https://api-rest-cliente-servico.herokuapp.com/api/clientes
 
-Exemplo em formato JSON:
+Example in JSON format:
 
 {
 "nome" : "Joao",
@@ -22,19 +22,19 @@ Exemplo em formato JSON:
     ]
 }
 
-Método GET (consultar):
+GET Method (query):
 
-https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "digite o ID do Cliente em que deseja consultar"
+https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "enter the Client ID you want to query"
 
-Exemplo: https://api-rest-cliente-servico.herokuapp.com/api/clientes/1
+Example: https://api-rest-cliente-servico.herokuapp.com/api/clientes/1
 
-Método PUT (atualizar):
+PUT Method (update):
 
-https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "digite o ID do Cliente em que deseja atualizar"
+https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "enter the Client ID you want to update"
 
-Exemplo: https://api-rest-cliente-servico.herokuapp.com/api/clientes/2
+Example: https://api-rest-cliente-servico.herokuapp.com/api/clientes/2
 
-Exemplo em formato JSON:
+Example in JSON format:
 
 {
 "nome" : "Maria",
@@ -47,11 +47,11 @@ Exemplo em formato JSON:
     ]
 }
 
-Método DELETE (excluir):
+DELETE Method (delete):
 
-https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "digite o ID do Cliente em que deseja excluir"
+https://api-rest-cliente-servico.herokuapp.com/api/clientes/ "enter the Client ID you want to delete"
 
-Exemplo: https://api-rest-cliente-servico.herokuapp.com/api/clientes/3
+Example: https://api-rest-cliente-servico.herokuapp.com/api/clientes/3
 
 
 
